@@ -105,7 +105,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Detalles de Protocolo</h1>
+                    <h1 class="page-header">Detalle Protocolo</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -289,7 +289,7 @@ Fusce tincidunt vehicula tellus, ut elementum sapien ultrices sagittis. Proin qu
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i>&nbsp;Datos del Partido (comparado a media equipos)
+                            <i class="fa fa-bar-chart-o fa-fw"></i>&nbsp;Matriz Conductas Violentas
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -302,7 +302,7 @@ Fusce tincidunt vehicula tellus, ut elementum sapien ultrices sagittis. Proin qu
                     <!-- /.panel -->
                 </div>
 
-                <div class="col-lg-12">
+                <div class="col-lg-12 hidden">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-dashboard fa-fw"></i>&nbsp;REPF completados por agentes
@@ -574,6 +574,7 @@ Fusce tincidunt vehicula tellus, ut elementum sapien ultrices sagittis. Proin qu
             type: 'bar',
             data: {
               labels: ["Jugadores", "Entrenadores", "Padres", "Árbitros"],
+              /* Antiguo con 3 columnas de cada 
               datasets: [
                 {
                   label: "Media Equipos de la Liga",
@@ -587,6 +588,14 @@ Fusce tincidunt vehicula tellus, ut elementum sapien ultrices sagittis. Proin qu
                   label: "Media Equipo Visitante",
                   backgroundColor: "rgba(98,165,81,0.5)",
                   data: [2.7,1.9,1.8,3.1]
+                }
+               ]
+               */
+               datasets: [
+               {
+                  label: "Nota Media",
+                  data: [1.9,1.5,1.1,1.4],
+                  backgroundColor: "rgba(49,130,189,0.5)"
                 }
 
               ]
