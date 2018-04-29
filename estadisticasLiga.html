@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gesto Deportivo">
+
+    <title>Deportivity</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Libreria para menu responsive -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+
+        <!-- Navigation -->
+        <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm sidebar sidebar-nav navbar-collapse">
+            <div class="menu-logo-wrapper">
+                <img class="menu-logo visible-md visible-lg" src="../img/logo.png">
+            </div>
+          
+            <ul class="nav" id="side-menu"> <!-- falta navmenu-nav-->
+
+                <!--        
+                <li>
+                    <a href="registro.html"><i class="fa fa-edit fa-fw"></i> Evaluar Partido</a>
+                </li>
+                 -->
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit fa-fw"></i> Evaluar Partido<span class="fa arrow"></a>
+                    <ul class="nav nav-second-level dropdown-menu navmenu-nav">
+                        <li>
+                            <a href="registroArbitro.html">Árbitro</a>
+                        </li>
+                        <li>
+                            <a href="registroEntrenador.html">Entrenador</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart-o fa-fw""></i> Estadísticas<span class="fa arrow"></a>
+                    <ul class="nav nav-second-level dropdown-menu navmenu-nav">
+                        <li>
+                            <a href="estadisticasFederacion.html">Federación</a>
+                        </li>
+                        <li>
+                            <a href="estadisticasLiga.html">Competiciones</a>
+                        </li>
+                        <li>
+                            <a href="club.html">Clubes</a>
+                        </li>
+                        <li>
+                            <a href="estadisticasEquipo.html">Equipos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table fa-fw"></i> Administración<span class="fa arrow"></a>
+                    <ul class="nav nav-second-level dropdown-menu navmenu-nav" role="menu">
+                        <li>
+                            <a href="administracionFederacion.html">Federación</a>
+                        </li>
+                        <li>
+                            <a href="administracionLiga.html">Competiciones</a>
+                        </li>
+                        <li>
+                            <a href="administracionJornadas.html">Jornadas</a>
+                        </li>
+                        <li>
+                            <a href="estadisticasEquipo.html">Equipos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li>
+                    <a href="listadoProtocolosV3.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user fa-fw"></i> Mi Perfil</a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-power-off fa-fw"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+
+
+
+        </div>
+
+
+
+        <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          <a class="navbar-brand" href="#"><b>Deportivity</b></a>
+        </div>
+
+
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Primera Infantil</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Semáforo Deportivo
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="col-lg-12 col-lg-12-2">
+                                <div class="panel panel-yellow">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-12 text-center">
+                                                <div class="huge">6.2</div>
+                                                <div>Índice Deportividad Competiciones</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-lg-6-2">
+                                <div class="panel panel-red">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-12 text-center">
+                                                <div class="huge">5.6</div>
+                                                <div>Entrenadores</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-lg-6-2">
+                                <div class="panel panel-yellow">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-12 text-center">
+                                                <div class="huge">6.4</div>
+                                                <div>Jugadores</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-lg-6-2">
+                                <div class="panel panel-green">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-12 text-center">
+                                                <div class="huge">7.1</div>
+                                                <div>Árbitros</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+            
+            
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Tendencia de la competición
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="graficoTendenciaGlobal" class="responsive-chart-container">
+                                <canvas id="canvasGraficoTendenciaGlobal" ></canvas>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+                <!-- /.col-lg-6 -->
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-list fa-fw"></i>&nbsp;Clasificación Deportividad
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Equipo</th>
+                                            <th>Índice Deportividad</th>
+                                            <!--
+                                            <th>Nota entrenador</th>
+                                            <th># entrenador</th>
+                                            <th>Nota jugadores</th>
+                                            <th># jugadores</th>
+                                            -->
+                                            <th>Detalles</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="success">
+                                            <td>1</td>
+                                            <td>CF Abetxuko</td>
+                                            <td>8.5</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>2</td>
+                                            <td>Marianistas B</td>
+                                            <td>8.1</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                            -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>3</td>
+                                            <td>CD Ariznabarra</td>
+                                            <td>7.8</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>4</td>
+                                            <td>CD Corazonistas B</td>
+                                            <td>7.5</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>5</td>
+                                            <td>Santa María Vitoria</td>
+                                            <td>7.3</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>6</td>
+                                            <td>Miguel de Unamuno</td>
+                                            <td>6.9</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>7</td>
+                                            <td>CD Ariznabarra A</td>
+                                            <td>6.8</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>8</td>
+                                            <td>Salburua Aurrera</td>
+                                            <td>6.5</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="warning">
+                                            <td>9</td>
+                                            <td>Marianistas A</td>
+                                            <td>5.9</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="warning">
+                                            <td>10</td>
+                                            <td>Betoño A</td>
+                                            <td>5.8</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="warning">
+                                            <td>11</td>
+                                            <td>CD Ariznabarra C</td>
+                                            <td>5.5</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="warning">
+                                            <td>12</td>
+                                            <td>CD Corazonistas</td>
+                                            <td>5.3</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td>13</td>
+                                            <td>Sanmaniego</td>
+                                            <td>4.8</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td>14</td>
+                                            <td>Lantaron CF</td>
+                                            <td>4.4</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td>15</td>
+                                            <td>Amurrio A</td>
+                                            <td>4.2</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td>16</td>
+                                            <td>Laudio C.D.</td>
+                                            <td>3.8</td>
+                                            <!--
+                                            <td>6.2</td>
+                                            <td>5º</td>
+                                            <td>7.8</td>
+                                            <td>2º</td>
+                                             -->
+                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+
+                <div class="col-lg-12 hidden">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i>&nbsp;Tendencias Equipos por Jornada
+                        </div>
+                        <!-- /.panel-heading -->
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="graficoTendenciaGlobal" class="responsive-chart-container">
+                                <canvas id="graficoTendenciaCompeticiones" height="100vh" width="100vw"></canvas>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-table fa-fw"></i>&nbsp;Protocolo de Intervención
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Paso</th>
+                                            <th>Estado</th>
+                                            <th>Fecha</th>
+                                            <th>Categoría</th>
+                                            <th>Jorn.</th>
+                                            <th>Equipo</th>
+                                            <th>Taller</th>
+                                            <th>Detalles</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        2    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Iniciado</td>
+                                            <td>14/03/2018</td>
+                                            <td>2ª Cadete</td>
+                                            <td>12</td>
+                                            <td>Miguel de Unamuno</td>                                            
+                                            <td>Llamada</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        1    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Iniciado</td>
+                                            <td>14/03/2018</td>
+                                            <td>2ª Cadete</td>
+                                            <td>12</td>
+                                            <td>C.D. Corazonistas</td>                                            
+                                            <td>Llamada</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#d9534f;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#d9534f;">
+                                                        2    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>02/03/2018</td>
+                                            <td>1ª Infantil</td>
+                                            <td>12</td>
+                                            <td>Marianistas A</td>                                            
+                                            <td>Llamada</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#d9534f;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#d9534f;">
+                                                        3    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>02/03/2018</td>
+                                            <td>1ª Infantil</td>
+                                            <td>12</td>
+                                            <td>Marianistas A</td>                                            
+                                            <td>Llamada</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        1    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>22/02/2018</td>
+                                            <td>1ª Cadete</td>
+                                            <td>11</td>
+                                            <td>Sanmaniego</td>                                            
+                                            <td>Llamada</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        2    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>22/02/2018</td>
+                                            <td>1ª Cadete</td>
+                                            <td>11</td>
+                                            <td>Lantaron C.F.</td>                                            
+                                            <td>Llamada</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                                                                              
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="row">
+                              <div class="col col-xs-12">
+                                <span class="" style="float: left; line-height: 34px;">Página 1 de 3</span>
+                                <ul class="pagination hidden-xs pull-right" style="margin:0;">
+                                  <li class="active"><a href="#">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#">3</a></li>
+                                </ul>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Chart.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+    <script src=" https://codepen.io/anon/pen/aWapBE.js"></script>
+
+
+    <!-- Menu Responsive: Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+        
+         //Tendencia global:
+        //
+        new Chart(document.getElementById("canvasGraficoTendenciaGlobal"), {
+          type: 'line',
+          data: {
+            labels: [11,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+            datasets: [{ 
+                data: [7.3,7.9,7.3,7.4,7.3,7.9,7.7,7.7,7.6,7.7,7.8,7.8,7.4,7.2,7.9,7.5,7.3,7.8],
+                label: "Indice Dep.",
+                borderColor: "rgba(0,116,189,0.5)",
+                fill: false,
+                backgroundColor: 'rgba(0,116,189,0.5)'
+              }, { 
+                data: [7.6,7.0,7.4,7.2,7.3,6.9,7.1,7.5,7.3,7.2,7.2,7.7,7.1,7.6,7.0,7.3,7.6,7.1],
+                label: "Entrenadores",
+                borderColor: "rgba(227,130,5,0.5)",
+                fill: false,
+                backgroundColor: "rgba(227,130,5,0.5)",
+                hidden: true
+              }, { 
+                data: [8.8,9.6,8.5,9.4,8.2,8.3,8.6,8.2,8.5,8.9,8.4,9.0,8.9,8.0,8.9,9.1,9.4,8.5],
+                label: "Jugadores",
+                borderColor: "rgba(228,61,74,0.5)",
+                fill: false,
+                backgroundColor: "rgba(228,61,74,0.5)",
+                hidden: true
+              }, { 
+                data: [6.3,6.9,6.7,7.1,6.6,6.4,6.0,7.3,7.3,6.8,6.5,6.4,6.4,6.7,6.8,7.3,6.7,6.3],
+                label: "ID Arbitros",
+                borderColor: "rgba(98,165,81,0.5)",
+                fill: false,
+                backgroundColor: "rgba(98,165,81,0.5)",
+                hidden: true
+              }, { 
+                data: [7.1,6.7,7.1,7.2,7.1,7.3,7.1,6.5,7.2,7.3,7.1,7.1,7.2,7.2,7.2,7.3,7.2,6.6],
+                label: "Arbitros",
+                borderColor: "rgba(64,168,167,0.5)",
+                fill: false,
+                backgroundColor: "rgba(64,168,167,0.5)",
+                hidden: true
+              }
+            ]
+          },
+          options: {
+            title: {
+              display: false,
+              text: 'World population per region (in millions)'
+            },
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+          }
+        });
+        var colours = palette('tol', 10).map(function(hex) {
+                    return '#' + hex;
+                  });
+        
+        new Chart(document.getElementById("graficoTendenciaCompeticiones"), {
+          type: 'line',
+          data: {
+            labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+            datasets: [{ 
+                data: [7.3,7.9,7.3,7.4,7.3,7.9,7.7,7.7,7.6,7.7,7.8,7.8,7.4,7.2,7.9,7.5,7.3,7.8],
+                label: "C.D. Ariznabarra",
+                borderColor: colours[0],
+                fill: false
+              }, { 
+                data: [7.6,7.0,7.4,7.2,7.3,6.9,7.1,7.5,7.3,7.2,7.2,7.7,7.1,7.6,7.0,7.3,7.6,7.1],
+                label: "Marianistas A",
+                 borderColor: colours[1],
+                fill: false
+              }, { 
+                data: [8.8,9.6,8.5,9.4,8.2,8.3,8.6,8.2,8.5,8.9,8.4,9.0,8.9,8.0,8.9,9.1,9.4,8.5],
+                label: "C.F. Amurrio",
+                 borderColor: colours[2],
+                fill: false
+              }, { 
+                data: [6.3,6.9,6.7,7.1,6.6,6.4,6.0,7.3,7.3,6.8,6.5,6.4,6.4,6.7,6.8,7.3,6.7,6.3],
+                label: "San Ignacio A",
+                 borderColor: colours[3],
+                fill: false
+              }, { 
+                data: [7.1,6.7,7.1,7.2,7.1,7.3,7.1,6.5,7.2,7.3,7.1,7.1,7.2,7.2,7.2,7.3,7.2,6.6],
+                label: "San Ignacio B",
+                 borderColor: colours[4],
+                fill: false
+              }, { 
+                data: [5.6,5.5,5.6,5.2,5.8,5.6,5.4,5.5,6.0,5.4,5.0,5.1,5.2,5.7,5.0,5.2,5.7,5.4],
+                label: "San Viator",
+                 borderColor: colours[5],
+                fill: false
+              }, { 
+                data: [5.7,6.0,5.8,5.5,5.7,5.6,6.3,6.2,5.9,5.7,6.2,6.0,6.2,5.9,5.9,5.5,5.6,5.5],
+                label: "C.D. Abetxuko",
+                 borderColor: colours[6],
+                fill: false
+              }, { 
+                data: [9.0,9.3,9.7,9.0,9.8,9.5,9.8,9.1,8.8,9.8,9.1,9.4,9.6,9.1,9.3,9.7,9.5,9.8],
+                label: "C.D. Logroñés",
+                 borderColor: colours[7],
+                fill: false
+              }, { 
+                data: [8.0,8.2,8.1,8.4,8.4,8.4,8.0,8.3,8.0,8.3,8.3,8.2,8.2,8.2,8.4,8.5,8.2,8.2],
+                label: "C.F. Vitoriano",
+                 borderColor: colours[8],
+                fill: false
+              }, { 
+                data: [8.8,8.9,8.8,9.1,8.9,8.7,9.1,9.0,8.8,8.7,8.8,8.6,9.1,9.0,8.8,8.9,9.0,8.8],
+                label: "C.D. San Martín",
+                 borderColor: colours[9],
+                fill: false
+              },
+
+            ]
+          },
+          options: {
+            title: {
+              display: false,
+              text: 'World population per region (in millions)'
+            },
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+          }
+        });
+
+        
+
+    </script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+</body>
+
+</html>

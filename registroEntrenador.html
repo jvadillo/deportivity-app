@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gesto Deportivo">
+
+    <title>Deportivity</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Libreria para menu responsive -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+
+    <style type="text/css">
+        input[type=checkbox]
+        {
+          /* Double-sized Checkboxes */
+          -ms-transform: scale(1.5); /* IE */
+          -moz-transform: scale(1.5); /* FF */
+          -webkit-transform: scale(1.5); /* Safari and Chrome */
+          -o-transform: scale(1.5); /* Opera */
+          padding: 10px;
+        }
+
+        /* Might want to wrap a span around your checkbox text */
+        .checkboxtext
+        {
+          /* Checkbox text */
+          font-size: 105%;
+          display: inline;
+        }
+
+        .checkbox {
+            font-size: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm sidebar">
+            <div class="menu-logo-wrapper">
+                <img class="menu-logo visible-md visible-lg" src="../img/logo.png">
+            </div>
+
+            <ul class="nav" id="side-menu"> <!-- falta navmenu-nav-->
+                        
+                <!--        
+                <li>
+                    <a href="registro.html"><i class="fa fa-edit fa-fw"></i> Evaluar Partido</a>
+                </li>
+                 -->
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit fa-fw"></i> Evaluar Partido<span class="fa arrow"></a>
+                    <ul class="nav nav-second-level dropdown-menu navmenu-nav">
+                        <li>
+                            <a href="registroArbitro.html">Árbitro</a>
+                        </li>
+                        <li>
+                            <a href="registroEntrenador.html">Entrenador</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bar-chart-o fa-fw""></i> Estadísticas<span class="fa arrow"></a>
+                    <ul class="nav nav-second-level dropdown-menu navmenu-nav">
+                        <li>
+                            <a href="estadisticasFederacion.html">Federación</a>
+                        </li>
+                        <li>
+                            <a href="estadisticasLiga.html">Competiciones</a>
+                        </li>
+                        <li>
+                            <a href="club.html">Clubes</a>
+                        </li>
+                        <li>
+                            <a href="estadisticasEquipo.html">Equipos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table fa-fw"></i> Administración<span class="fa arrow"></a>
+                    <ul class="nav nav-second-level dropdown-menu navmenu-nav" role="menu">
+                        <li>
+                            <a href="administracionFederacion.html">Federación</a>
+                        </li>
+                        <li>
+                            <a href="administracionLiga.html">Competiciones</a>
+                        </li>
+                        <li>
+                            <a href="administracionJornadas.html">Jornadas</a>
+                        </li>
+                        <li>
+                            <a href="estadisticasEquipo.html">Equipos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                <li>
+                    <a href="listadoProtocolosV3.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user fa-fw"></i> Mi Perfil</a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-power-off fa-fw"></i> Cerrar Sesión</a>
+                </li>
+            </ul>
+          
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          <a class="navbar-brand" href="#"><b>Deportivity</b></a>
+        </div>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Evaluar Partido&nbsp;<small>&nbsp;<i class="fa fa-calendar fa-fw"></i>Jornada 4 (12/10/2018)</small></h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+            <div class="row">
+                
+                <form role="form">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                DATOS DEL PARTIDO
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    
+                                    <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <label>Jornada</label>
+                                                    <p class="form-control-static">12</p>
+                                                </div>
+
+                                                <div class="col-lg-3">
+                                                    <label>Fecha</label>
+                                                    <p class="form-control-static">14/03/2018</p>   
+                                                </div>
+
+                                                <div class="col-lg-3"> 
+                                                    <label>Local</label>
+                                                    <p class="form-control-static">CD San Martín</p>    
+                                                </div>
+                                                <div class="col-lg-3">    
+                                                    <label>Visitante</label>
+                                                    <p class="form-control-static">CD Amurrio</p>    
+                                                </div>
+                                            </div>
+
+                                    </div>
+                                    <!-- /.col-lg-12 (nested) -->
+                                    
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                DATOS DEPORTIVIDAD PARTIDO
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    
+                                    <div class="col-lg-12">
+       
+                                            <div class="form-group">
+                                                <label>Este <b>partido</b> lo calificaría como:</label>
+                                                <select class="form-control">
+                                                    <option>1 (muy violento)</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option selected>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10 (muy deportivo)</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Al <b>entrenador</b> del equipo local, en este partido, lo calificaría como:</label>
+                                                <select class="form-control">
+                                                    <option>1 (muy violento)</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option selected>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10 (muy deportivo)</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>A los jugadores del equipo local, en este partido, los calificaría como:</label>
+                                                <select class="form-control">
+                                                    <option>1 (muy violento)</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option selected>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10 (muy deportivo)</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Al entrenador del equipo visitante, en este partido, lo calificaría como:</label>
+                                                <select class="form-control">
+                                                    <option>1 (muy violento)</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option selected>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10 (muy deportivo)</option>
+                                                </select>
+                                            </div>
+
+
+
+                                            <div class="form-group">
+                                                <label>A los jugadores del equipo visitante, en este partido, los calificaría como::</label>
+                                                <select class="form-control">
+                                                    <option>1 (muy violento)</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option selected>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                    <option>9</option>
+                                                    <option>10 (muy deportivo)</option>
+                                                </select>
+                                            </div>
+
+                                    </div>
+                                    <!-- /.col-lg-12 (nested) -->
+                                    
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                1. ACTITUDES Y CONDUCTAS ASOCIADAS AL JUEGO LIMPIO O DEPORTIVO
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        
+                                        <div class="form-group">
+                                            <label>Actitudes y conductas asociadas al juego limpio</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">1. Jugadores del equipo local dentro de campo: “interrumpen” el partido debido a la lesión de un jugador del equipo contrario.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">2. Jugadores del equipo visitante dentro de campo: “interrumpen” el partido debido a la lesión de un jugador de nuestro equipo.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">3. Algún jugador del equipo local se disculpa con un contrario por una entrada fuerte o una acción anti-reglamentaria.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">4. Algún jugador del equipo local se disculpa con el árbitro por una entrada fuerte o una acción anti-reglamentaria.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">5. Algún jugador del equipo visitante se disculpa con un contrario por una entrada fuerte o una acción anti-reglamentaria.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">6. Algún jugador del equipo visitante se disculpa con el árbitro por una entrada fuerte o una acción anti-reglamentaria.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">7. Al final del partido los jugadores de ambos equipos se saludan (felicitan, dan la mano, ...).
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">8. Aplausos (sin “pitos”) de padres (espectadores) al principio del partido, en las gradas, dirigidos a los dos equipos.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">9. Aplausos (sin “pitos”) de padres (espectadores) en el descanso de la 1a parte del partido, en las gradas, dirigidos a los dos equipos.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">10. Aplausos (sin “pitos”) de padres (espectadores) al final del partido, en las gradas, dirigidos a los dos equipos.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">11. Aplausos de padres (espectadores), en las gradas, al árbitro.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">12. Intervención del entrenador del equipo local para “poner orden” en nuestros jugadores.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">13. Intervención del entrenador del equipo visitante para “poner orden en sus jugadores.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">14. Actitud positiva y constructiva del árbitro que ha favorecido el juego limpio.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">15. Intervención del árbitro que ha reconducido adecuadamente alguna situación que hubiera podido finalizar en incidentes violentos.
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.col-lg-12 (nested) -->
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                2. ACTITUDES Y CONDUCTA ASOCIADAS A JUEGO VIOLENTO (NO-DEPORTIVO)
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        
+                                        <div class="form-group">
+                                            <label>Actitudes y conductas asociadas al juego limpio</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">16. Agresión verbal entre jugadores dentro de campo.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">17. Agresión física entre jugadores dentro del campo.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">18. Agresión verbal entre jugadores en el recinto de la instalación deportiva.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">19. Agresión física entre jugadores en el recinto de la instalación deportiva.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">20. Simulación de falta por algún por parte de algún jugador.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">21. Agresión verbal entre padres (espectadores) en las gradas.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">22. Agresión física entre padres (espectadores) en de las gradas.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">23. Agresión verbal entre padres (espectadores) fuera de las gradas.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">24. Agresión física entre padres (espectadores) fuera de las gradas.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">25. Agresión verbal de padres (espectadores) a jugadores.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">26. Agresión física de padres (espectadores) a jugadores.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">27. Agresión verbal de padres (espectadores) a entrenadores.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">28. Agresión física de padres (espectadores) a entrenadores.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">29. Agresión verbal de padres (espectadores) al árbitro.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">30. Agresión física de padres (espectadores) al árbitro.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">31. Instigación verbal entre miembros de los banquillos de ambos equipos (jugadores, delegado del equipo, ...).
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">32. Instigación verbal de algún entrenador al árbitro.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">33. Agresión física de algún entrenador al árbitro.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">34. Actitud negativa (altiva, agresiva) del árbitro que no ha favorecido el juego limpio.
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">35. Actitud negativa (pasiva) del árbitro que no ha favorecido el juego limpio.
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- /.col-lg-12 (nested) -->
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                3. OTRAS ACTITUDES Y CONDUCTAS NO RECOGIDAS ANTERIORMENTE
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        
+                                            <div class="form-group">
+                                                <label>¿Otras conductas de los entrenadores?</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>¿Otras conductas (actitud) del árbitro?</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>¿Otras conductas de otras personas o grupos?</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+                                            
+                                            
+                                        
+                                    </div>
+                                    <!-- /.col-lg-6 (nested) -->
+                                    
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                    </div>
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-12">
+                        <!-- /.panel -->
+                        <button type="submit" class="btn btn-default btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-default btn-warning">Borrar</button>
+
+                    </div>
+                    <hr>
+                    <!-- /.col-lg-12 -->
+                </form>
+
+            </div>
+            <!-- /.row -->
+            <hr>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+   <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Menu Responsive: Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
