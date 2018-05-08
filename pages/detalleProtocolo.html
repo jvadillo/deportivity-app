@@ -57,6 +57,9 @@
                             <a href="estadisticasLiga.html">Competiciones</a>
                         </li>
                         <li>
+                            <a href="club.html">Clubes</a>
+                        </li>
+                        <li>
                             <a href="estadisticasEquipo.html">Equipos</a>
                         </li>
                     </ul>
@@ -81,7 +84,7 @@
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="listadoProtocolosV2.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
+                    <a href="listadoProtocolosV3.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-user fa-fw"></i> Mi Perfil</a>
@@ -533,7 +536,7 @@ Fusce tincidunt vehicula tellus, ut elementum sapien ultrices sagittis. Proin qu
         new Chart(document.getElementById("graficoNotaMedia"), {
             type: 'bar',
             data: {
-              labels: ["Jugadores", "Entrenadores", "Padres", "Árbitros"],
+              labels: ["Jugadores", "Entrenadores", "Grada", "Árbitros"],
               datasets: [
                 {
                   label: "Media Equipos de la Liga",
@@ -573,7 +576,7 @@ Fusce tincidunt vehicula tellus, ut elementum sapien ultrices sagittis. Proin qu
         new Chart(document.getElementById("graficoMediaTarjetasPorPartido"), {
             type: 'bar',
             data: {
-              labels: ["Jugadores", "Entrenadores", "Padres", "Árbitros"],
+              labels: ["Jugadores", "Entrenadores", "Grada", "Árbitros"],
               /* Antiguo con 3 columnas de cada 
               datasets: [
                 {

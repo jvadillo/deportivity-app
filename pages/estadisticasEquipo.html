@@ -71,6 +71,9 @@
                             <a href="estadisticasLiga.html">Competiciones</a>
                         </li>
                         <li>
+                            <a href="club.html">Clubes</a>
+                        </li>
+                        <li>
                             <a href="estadisticasEquipo.html">Equipos</a>
                         </li>
                     </ul>
@@ -95,7 +98,7 @@
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="listadoProtocolosV2.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
+                    <a href="listadoProtocolosV3.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-user fa-fw"></i> Mi Perfil</a>
@@ -133,32 +136,64 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="panel panel-red">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <i class="fa fa-user fa-4x"></i>
+                                                    <i class="fa fa-user fa-3x"></i>
                                                 </div>
                                                 <div class="col-xs-10 text-right">
                                                     <div class="huge">4.1 <small>/ 7.6</small></div>
-                                                    <div>Índice Deportividad Equipo</div>
+                                                    <div>Índice Deportividad</div>
                                                 </div>
                                             </div>
                                         </div>
                                         
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-3 col-md-6">
                                     <div class="panel panel-red">
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <i class="fa fa-user fa-4x"></i>
+                                                    <i class="fa fa-user fa-3x"></i>
                                                 </div>
                                                 <div class="col-xs-10 text-right">
                                                     <div class="huge">9º</div>
-                                                    <div>Clasificación Equipo</div>
+                                                    <div>Clasificación</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel panel-green">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-2">
+                                                    <i class="fa fa-users fa-3x"></i>
+                                                </div>
+                                                <div class="col-xs-10 text-right">
+                                                    <div class="huge">8.1 <small>/ 7.6</small></div>
+                                                    <div>Nota Grada</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="panel panel-green">
+                                        <div class="panel-heading">
+                                            <div class="row">
+                                                <div class="col-xs-2">
+                                                    <i class="fa fa-users fa-3x"></i>
+                                                </div>
+                                                <div class="col-xs-10 text-right">
+                                                    <div class="huge">5º</div>
+                                                    <div>Clasificación Grada</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -171,7 +206,7 @@
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <i class="fa fa-user fa-4x"></i>
+                                                    <i class="fa fa-user fa-3x"></i>
                                                 </div>
                                                 <div class="col-xs-10 text-right">
                                                     <div class="huge">4.1 <small>/ 7.6</small></div>
@@ -187,7 +222,7 @@
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <i class="fa fa-user fa-4x"></i>
+                                                    <i class="fa fa-user fa-3x"></i>
                                                 </div>
                                                 <div class="col-xs-10 text-right">
                                                     <div class="huge">9º</div>
@@ -202,7 +237,7 @@
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-xs-2">
-                                                    <i class="fa fa-users fa-4x"></i>
+                                                    <i class="fa fa-users fa-3x"></i>
                                                 </div>
                                                 <div class="col-xs-10 text-right">
                                                     <div class="huge">6.9 <small>/ 8.2</small></div>
@@ -250,49 +285,81 @@
                                     <thead>
                                         <tr>
                                             <th>Paso</th>
-                                            <th>Jornada</th>
+                                            <th>Estado</th>
                                             <th>Fecha</th>
-                                            <th>Local</th>
-                                            <th>Visitante</th>
+                                            <th>Categoría</th>
+                                            <th>Jorn.</th>
+                                            <th>Equipo Local</th>
+                                            <th>Equipo Visitante</th>
                                             <th>Taller</th>
-                                            <th>Realizado?</th>
-                                            <th>Acciones</th>
+                                            <th>Detalles</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>7</td>
-                                            <td>14/02/2018</td>
-                                            <td>San Ignacio</td>
-                                            <td>Marianistas</td>
-                                            <td>Llamada</td>
-                                            <td>SI</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>9</td>
-                                            <td>14/02/2018</td>
-                                            <td>Marianistas</td>
-                                            <td>Ariznabarra SD</td>
-                                            <td>Entrenadores</td>
-                                            <td>SI</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>12</td>
-                                            <td>02/01/2018</td>
-                                            <td>FC San Martín</td>
-                                            <td>Marianistas</td>
-                                            <td>Jugadores</td>
-                                            <td>NO</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
-                                        </tr> 
                                         
-                                                             
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#d9534f;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#d9534f;">
+                                                        3    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Iniciado</td>
+                                            <td>28/03/2018</td>
+                                            <td>1ª Infantil</td>
+                                            <td>12</td>
+                                            <td>Ariznabarra C.D. "A"</td>
+                                            <td>Miguel de Unamuno</td>                                            
+                                            <td>Taller entrenadores</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        2    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Iniciado</td>
+                                            <td>14/03/2018</td>
+                                            <td>1ª Infantil</td>
+                                            <td>9</td>
+                                            <td>Ariznabarra C.D. "A"</td>
+                                            <td>C.D. Corazonistas</td>                                            
+                                            <td>Taller jugadores</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        1    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>02/03/2018</td>
+                                            <td>1ª Infantil</td>
+                                            <td>7</td>
+                                            <td>Marianistas A</td>
+                                            <td>Ariznabarra C.D. "A"</td>                                            
+                                            <td>Llamada</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                                                                              
                                     </tbody>
+
                                 </table>
                             </div>
                             <!-- /.table-responsive -->

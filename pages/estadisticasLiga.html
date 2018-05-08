@@ -75,6 +75,9 @@
                             <a href="estadisticasLiga.html">Competiciones</a>
                         </li>
                         <li>
+                            <a href="club.html">Clubes</a>
+                        </li>
+                        <li>
                             <a href="estadisticasEquipo.html">Equipos</a>
                         </li>
                     </ul>
@@ -99,7 +102,7 @@
                     <!-- /.nav-second-level -->
                 </li>
                 <li>
-                    <a href="listadoProtocolosV2.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
+                    <a href="listadoProtocolosV3.html"><i class="fa fa-list fa-fw"></i>Protocolos</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-user fa-fw"></i> Mi Perfil</a>
@@ -155,38 +158,51 @@
                                     
                                 </div>
                             </div>
-                            <div class="col-xs-4 col-lg-6-2">
+                            <div class="col-xs-6 col-lg-6-2">
                                 <div class="panel panel-red">
                                     <div class="panel-heading">
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
                                                 <div class="huge">5.6</div>
-                                                <div>Entrenadores</div>
+                                                <div>Nota<br> Entrenadores</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-4 col-lg-6-2">
+                            <div class="col-xs-6 col-lg-6-2">
                                 <div class="panel panel-yellow">
                                     <div class="panel-heading">
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
                                                 <div class="huge">6.4</div>
-                                                <div>Jugadores</div>
+                                                <div>Nota<br> Jugadores</div>
                                             </div>
                                         </div>
                                     </div>
                                     
                                 </div>
                             </div>
-                            <div class="col-xs-4 col-lg-6-2">
+                            <div class="col-xs-6 col-lg-6-2">
+                                <div class="panel panel-green">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-12 text-center">
+                                                <div class="huge">7.8</div>
+                                                <div>Nota<br> Grada</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-lg-6-2">
                                 <div class="panel panel-green">
                                     <div class="panel-heading">
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
                                                 <div class="huge">7.1</div>
-                                                <div>Árbitros</div>
+                                                <div>Nota<br> Árbitros</div>
                                             </div>
                                         </div>
                                     </div>
@@ -463,7 +479,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-table fa-fw"></i>&nbsp;Protocolos de Intervención
+                            <i class="fa fa-table fa-fw"></i>&nbsp;Protocolo de Intervención
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -471,84 +487,145 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th># Paso</th>
-                                            <th>Jornada</th>
+                                            <th>Paso</th>
+                                            <th>Estado</th>
                                             <th>Fecha</th>
-                                            <th>Local</th>
-                                            <th>Visitante</th>
+                                            <th>Jorn.</th>
+                                            <th>Equipo</th>
                                             <th>Taller</th>
-                                            <th>Realizado?</th>
-                                            <th>Acciones</th>
+                                            <th>Detalles</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        
                                         <tr>
-                                            <td>2</td>
-                                            <td>7</td>
-                                            <td>14/02/2018</td>
-                                            <td>San Ignacio</td>
-                                            <td>Marianistas</td>
-                                            <td>Jugadores</td>
-                                            <td>NO</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        2    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Iniciado</td>
+                                            <td>14/03/2018</td>
+                                            <td>12</td>
+                                            <td>Miguel de Unamuno</td>                                            
+                                            <td>Taller Jugadores</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>9</td>
-                                            <td>14/02/2018</td>
-                                            <td>Dep. Alaves</td>
-                                            <td>Ariznabarra SD</td>
-                                            <td>Entrenadores</td>
-                                            <td>NO</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>9</td>
-                                            <td>02/01/2018</td>
-                                            <td>FC San Martín</td>
-                                            <td>SD San Ignacio</td>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        1    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Iniciado</td>
+                                            <td>14/03/2018</td>
+                                            <td>12</td>
+                                            <td>C.D. Corazonistas</td>                                            
                                             <td>Llamada</td>
-                                            <td>SI</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
-                                        </tr> 
-                                        <tr>
-                                            <td>2</td>
-                                            <td>7</td>
-                                            <td>14/02/2018</td>
-                                            <td>San Ignacio</td>
-                                            <td>Marianistas</td>
-                                            <td>Jugadores</td>
-                                            <td>SI</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
-                                            <td>9</td>
-                                            <td>14/02/2018</td>
-                                            <td>Dep. Alaves</td>
-                                            <td>Ariznabarra SD</td>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        2    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>02/03/2018</td>
+                                            <td>12</td>
+                                            <td>Betoño A</td>                                            
+                                            <td>Taller Entrenadores</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#d9534f;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#d9534f;">
+                                                        3    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>02/03/2018</td>
+                                            <td>12</td>
+                                            <td>Marianistas A</td>                                            
+                                            <td>Taller Entrenadores</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        1    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>22/02/2018</td>
+                                            <td>11</td>
+                                            <td>Sanmaniego</td>                                            
                                             <td>Llamada</td>
-                                            <td>SI</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>9</td>
-                                            <td>02/01/2018</td>
-                                            <td>FC San Martín</td>
-                                            <td>SD San Ignacio</td>
-                                            <td>Entrenadores</td>
-                                            <td>SI</td>
-                                            <td><a href="estadisticasEquipo.html" class="btn btn-primary">Ver Detalles</a></td>
-                                        </tr> 
-                                                             
+                                            <td>
+                                                <span class="fa-stack">
+                                                <!-- The icon that will wrap the number -->
+                                                    <span class="fa fa-circle-o fa-stack-2x" style="color:#f0ad4e;"></span>
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x" style="color:#f0ad4e;">
+                                                        2    
+                                                    </strong>
+                                                </span>
+                                            </td>
+                                            <td>Finalizado</td>
+                                            <td>22/02/2018</td>
+                                            <td>11</td>
+                                            <td>Lantaron C.F.</td>                                            
+                                            <td>Taller Jugadores</td>
+                                            <td><a href="detalleProtocolo.html" class="btn btn-primary">Ver Detalles</a></td>
+                                        </tr>
+                                                                                              
                                     </tbody>
+
                                 </table>
                             </div>
                             <!-- /.table-responsive -->
                         </div>
                         <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="row">
+                              <div class="col col-xs-12">
+                                <span class="" style="float: left; line-height: 34px;">Página 1 de 3</span>
+                                <ul class="pagination hidden-xs pull-right" style="margin:0;">
+                                  <li class="active"><a href="#">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#">3</a></li>
+                                </ul>
+                              </div>
+                          </div>
+                        </div>
                     </div>
                     <!-- /.panel -->
                 </div>
@@ -614,8 +691,8 @@
                 backgroundColor: "rgba(228,61,74,0.5)",
                 hidden: true
               }, { 
-                data: [6.3,6.9,6.7,7.1,6.6,6.4,6.0,7.3,7.3,6.8,6.5,6.4,6.4,6.7,6.8,7.3,6.7,6.3],
-                label: "ID Arbitros",
+                data: [6.3,6.9,6.7,7.1,6.6,6.4,6.0,7.3,7.3,6.8,6.5,6.4,6.4,6.7,6.8,7.3,6.7,7.8],
+                label: "Grada",
                 borderColor: "rgba(98,165,81,0.5)",
                 fill: false,
                 backgroundColor: "rgba(98,165,81,0.5)",
@@ -638,9 +715,9 @@
             maintainAspectRatio: false,
             scales: {
                 yAxes: [{
-
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero:true,
+                        suggestedMax: 10 //set y axis maximum value
                     }
                 }]
             }
